@@ -22,7 +22,7 @@ const Teams = () => {
         const options = {
             method: 'GET',
             headers: {
-                'x-rapidapi-key': 'c225a0c44emsh1a65f203443a441p1fb862jsn89e1ae26a43d',
+                'x-rapidapi-key': import.meta.env.VITE_RAPIDAPI_KEY,
                 'x-rapidapi-host': 'api-football-v1.p.rapidapi.com'
             },
             next: {
@@ -51,7 +51,7 @@ const Teams = () => {
         const options = {
             method: 'GET',
             headers: {
-                'x-rapidapi-key': 'c225a0c44emsh1a65f203443a441p1fb862jsn89e1ae26a43d',
+                'x-rapidapi-key': import.meta.env.VITE_RAPIDAPI_KEY,
                 'x-rapidapi-host': 'api-football-v1.p.rapidapi.com'
             },
             next: {
@@ -80,7 +80,7 @@ const Teams = () => {
         const options = {
             method: 'GET',
             headers: {
-                'x-rapidapi-key': 'c225a0c44emsh1a65f203443a441p1fb862jsn89e1ae26a43d',
+                'x-rapidapi-key': import.meta.env.VITE_RAPIDAPI_KEY,
                 'x-rapidapi-host': 'api-football-v1.p.rapidapi.com'
             },
             next: {
