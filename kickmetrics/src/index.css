@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.roboto-regular {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1;
+}
+
+.roboto-medium {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  line-height: .9;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth ;
+}
+
+body {
+  margin: 0;
+  max-width: 100%;
+}
+
+.home::placeholder {
+  color: #6F6F6F;
+  font-size: .7em;
+}
+.search::placeholder {
+  color: #EFEEED;
+  font-size: .72em;
+}
+
+
+@keyframes slide {
+  from{
+      transform: translateX(0)
+  }
+  to {
+      transform: translateX(-3700px);
+  }
+}
+
+@keyframes slide-sm {
+  from{
+      transform: translateX(0)
+  }
+  to {
+      transform: translateX(-5000px);
+  }
+}
+
+.slide-container {
+  animation: 30s slide infinite linear;
+}
+
+.slide-small {
+  animation: 80s slide-sm infinite linear;
+}
+
+@keyframes slideRight {
+  from {
+    opacity: 0;
+    transform: translateX(-75%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideLeft {
+  from {
+    opacity: 0;
+    transform: translateX(75%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.animate-slideRight {
+  animation: slideRight 0.3s linear forwards;
+}
+
+.animate-slideLeft {
+  animation: slideLeft 0.3s linear forwards;
+}
+
+
+#correct {
+  background-color: #fff;
+}
+#almost {
+  background-color: #6F6F6F;
+}
+#wrong {
+  background-color: #0B1314;
+}
+
+.tile-animation {
+  animation: tileFlip 0.5s ease forwards;
+}
+
+@keyframes tileFlip {
+  0% {
+    transform: rotateX(0);
+  }
+
+  45% {
+    transform: rotateX(90deg);
+  }
+
+  55% {
+    transform: rotateX(90deg);
+  }
+
+  100% {
+    transform: rotateX(0);
+  }
+}
