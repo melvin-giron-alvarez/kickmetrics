@@ -6,4 +6,4 @@ export default defineConfig({
   build: {
     outDir: 'build',  // Specify the output directory
     chunkSizeWarningLimit: 1000, // Adjust the limit as needed
-});
+}});
